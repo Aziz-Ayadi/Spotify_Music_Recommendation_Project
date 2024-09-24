@@ -2,7 +2,7 @@
 * Created an unsupervised machine learning project that tends to make music recommendations according to a user's list of songs they used to listen to.
 * Collected data to work with from kaggle (a dataset named `recommendation-system-spotify` within Datasets section).
 * Cleaned data up and engineered features so they will help us in the prediction process like creating one hot encoded features.
-* Connected to `Spotify` API and generate music recommendations according to my Playlist's list of songs using `cosine similarity` technique.
+* Connected to `Spotify` API and generated music recommendations according to my Playlist's list of songs using `cosine similarity` technique.
 
 ## Code and Resources used
 <b>Python Version :</b> 3.9<br>
