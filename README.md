@@ -33,3 +33,12 @@ Collect data from kaggle website to get a dataset that has 170653 songs and anot
 * Track's list of genres
 
 ## Data Cleaning
+Clean the data up to make it ready for modeling process. I made the following changes:
+* Changed the artists and genres features' types to a list
+* Created a new feature that combines both track name and artists' names who have contributed in the realisation of that song and drop duplicates on this variable
+* Exploded artists' column, merged it with artists related dataset and enriched spotify dataset with genres information extracted from the newly made dataframe that combines exploded artists, genres and tracks musical characteristics
+* Created 5-point bucket for popularity feature
+* Made dummy variables for year and popularity features
+* Normalized float features using MinMax Scaler
+* Generated TF-IDF features from genres list feature
+
