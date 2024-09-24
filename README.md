@@ -42,3 +42,10 @@ Clean the data up to make it ready for modeling process. I made the following ch
 * Normalized float features using MinMax Scaler
 * Generated TF-IDF features from genres list feature
 
+## Connection to Spotify API
+At first, I created a Spotify web app that'll manage my playlists, logged in my Spotify account and created some playlists to use in the recommendation phase based on the songs I used to listen to. Then, I extracted my secret token so I don't have to authentificate every time I want to connect to Spotify API. After that, I pulled out songs that belong to our spotify dataset because I'll make my recommendation system based on them.
+
+## Recommendation System Building
+This phase consists of two steps:
+* <b>Creating Playlist Vector :</b> Summarize my playlist into a single vector created by multiplying Spotify numerical list of features already created in precedent steps by weight and summing up every row to create a single vector for all songs. Also, it's so important to note that weight factor is chosen so that so our system could recommend us the most recent songs that have been published so far.
+* <b>Making recommendations :</b> Compare my playlists' vectors to other songs' vector in Spotify dataset using `Cosine Similarity` score and extract the most 24 similar tracks to it (Highest cosine similarity).
